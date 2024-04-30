@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="page-description" content="Primi passi operativi per creare una pagina HTML per un post. Scopri come iniziare in modo facile" />
     <title>Sviluppo di una pagina web - Blog Epicode</title>
     <style>
       table {
@@ -29,9 +30,11 @@
     </header>
     <nav>
       <div id="menu">
-        <p>Home</p>
-        <p>Articoli</p>
-        <p>Lavora con noi</p>
+        <ul>
+          <li><a href="/home.html" title="home">Home</a></li>
+          <li><a href="/articoli.html" title="home">Articoli</a></li>
+          <li><a href="/job.html" title="home">Lavora con noi</a></li>
+        </ul>
       </div>
     </nav>
     <main>
@@ -40,9 +43,9 @@
         <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine</p>
         <p>Le varie aree saranno qundi suddivise in:</p>
         <ul>
-          <li>Contenuti di intestazione del tag < header ></li>
-          <li>Contenuti centrali variabili del tag < main ></li>
-          <li>Contenuti di fine pagina comuni, da inserire nel tag < footer ></li>
+          <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
+          <li>Contenuti centrali variabili del tag <code>&lt;main&gt;</code></li>
+          <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code></li>
         </ul>
         <h2>Formattazione codice</h2>
         <p>
@@ -121,25 +124,25 @@
     <aside>
       <div id="correlati">
         <h3>Articoli correlati</h3>
-        <ul>
-          <li>Validare codice HTML</li>
-          <li>Categoria: develop</li>
-          <li>Data: 18-08-2020</li>
-        </ul>
-        <ul>
-          <li>Correggere la sintassi</li>
-          <li>Categoria: develop</li>
-          <li>Data: 16-09-2020</li>
-        </ul>
-        <ul>
-          <li>Meno kb nella pagina</li>
-          <li>Categoria: ottimizzazione</li>
-          <li>Data: 30-09-2020</li>
-        </ul>
+        <div id="correlati-1">
+          <a href="/validation.html" title="Validation" target="_blank">Validare il codice HTML</a>
+          <p>Categoria: develop</p>
+          <p>Data: 18-08-2020</p>
+        </div>
+        <div id="correlati-2">
+          <a href="/sintassi.html" title="Sintassi" target="_blank">Correggere la sintassi</a>
+          <p>Categoria: develop</p>
+          <p>Data: 16-09-2020</p>
+        </div>
+        <div id="correlati-3">
+          <a href="/ottimizzation.html" title="Ottimization" target="_blank">Meno Kb nella pagina</a>
+          <p>Categoria: ottimizzazione</p>
+          <p>Data: 18-08-2020</p>
+        </div>
       </div>
     </aside>
     <footer>
-      <h3>Blog Epicode</h3>
+      <h4>Blog Epicode &copy;2023</h4>
       <p>Testata online di Mario Rossi, registrata con port. n.213/2018 - Via Luigi Einaudi 2 - Milano. P.IVA 00112233.</p>
       <p>info@epicode.scool <a href="mailto:info@epicode.scool">Invia email</a></p>
     </footer>
